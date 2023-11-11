@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-areas: 'img-2 img-1 img-4 img-3'
+    'img-2 img-1 img-4 img-3'
+    'img-2 img-1 img-4 img-5'
+    'img-2 img-1 img-6 img-5'
+    'img-13 img-1 img-6 img-5'
+    'img-13 img-8 img-6 img-5'
+    
+    'img-10 img-7 img-12 img-15'
+    'img-10 img-7 img-12 img-15'
+    'img-10 img-7 img-12 img-16'
+    'img-10 img-7 img-14 img-16'
+    'img-9 img-7 img-14 img-16'
+    'img-9 img-11 img-14 img-16';
+     display: grid;
+}
+img{
+    width: 100%;
+}
+.img-1 {
+    grid-area: img-1;
+    height: 810px;
+}
+.img-2 {
+    grid-area: img-2;
+    height: 710px;
+}
+.img-3 {
+    grid-area: img-3;
+    height: 370px;
+}
+.img-4 {
+    grid-area: img-4;
+    height: 510px;
+}
+.img-5 {
+    grid-area: img-5;
+    height: 610px;
+}
+.img-6 {
+    grid-area: img-6;
+    height: 470px;
+}
+.img-7 {
+    grid-area: img-7;
+    height: 810px;
+}
+.img-8 {
+    grid-area: img-8;
+    height: 170px;
+}
+.img-9 {
+    grid-area: img-9;
+    height: 270px;
+}
+.img-10 {
+    grid-area: img-10;
+    height: 710px;
+}
+.img-11 {
+    grid-area: img-11;
+    height: 170px;
+}
+.img-12 {
+    grid-area: img-12;
+    height: 510px;
+}
+.img-13 {
+    grid-area: img-13;
+    height: 270px;
+}
+.img-14 {
+    grid-area: img-14;
+    height: 470px;
+}
+.img-15 {
+    grid-area: img-15;
+    height: 370px;
+}
+.img-16 {
+    grid-area: img-16;
+    height: 610px;
+}
+
+img:hover{
+    opacity: .6;
+    filter: alpha(opacity=50);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    filter: blur(0.5px);
+}
+
+
+@media (max-width: 992px){
+    section{
+        grid-template-areas: 
+        'img-2 img-1'
+        'img-2 img-1'
+        'img-2 img-1'
+        'img-2 img-1'
+        'img-4 img-1'
+        'img-4 img-3'
+        
+        'img-5 img-6'
+        'img-5 img-6'
+        'img-5 img-6'
+        'img-5 img-13'
+        'img-8 img-13'
+        
+        'img-10 img-7'
+        'img-10 img-7'
+        'img-10 img-7'
+        'img-10 img-7'
+        'img-12 img-7'
+        'img-12 img-15'
+
+        'img-16 img-14'
+        'img-16 img-14'
+        'img-16 img-14'
+        'img-16 img-9'
+        'img-11 img-9'
+        ;
+    }
+    .img-2{
+        height: 670px;
+    }
+    .img-13{
+        height: 310px;
+    }
+    .img-15{
+        height: 410px;
+    }
+    .img-9{
+        height: 310px;
+    }
+}
+@media (max-width: 576px) {
+    section{
+        grid-template-areas: 'img-2'
+        'img-1'
+        'img-4'
+        'img-3'
+        'img-5'
+        'img-6'
+        'img-13'
+        'img-8'
+        
+        'img-10'
+        'img-7'
+        'img-12'
+        'img-15'
+        'img-14'
+        'img-16'
+        'img-9'
+        'img-11';
+    }
+}
